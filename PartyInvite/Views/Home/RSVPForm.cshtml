@@ -1,0 +1,18 @@
+﻿@model PartyInvite.Models.GuestRepsoneModel
+@{
+    ViewBag.Title = "RSVPForm";
+}
+
+<form>
+    <p>Your Name: <input type="text" name="name" id="name" /></p>
+    <p>Your Email: <input type="text" name="email" id="email" /></p>
+    <p>Your Phone: <input type="text" name="phone" id="phone" /></p>
+    <p>
+        Will you be attending the part?
+        <select name="attentd">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+    </p>
+    <input type="submit" value="Submit RSVP" />
+</form>
